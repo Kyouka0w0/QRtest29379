@@ -1,11 +1,13 @@
 <h1>テストQRコード作成</h1>
 
-<% require 'chunky_png'
+<% 
+require 'chunky_png'
 
 
-  def qrcode_tag(text, options = {})
+def qrcode_tag(text, options = {})
     qr = ::RQRCode::QRCode.new(text)
-  return ChunkyPNG::Image.from_datastream(qr.as_png.resize(400,400).to_datastream).to_data_url
-  end %>
+    return ChunkyPNG::Image.from_datastream(qr.as_png.resize(400,400).to_datastream).to_data_url
+end 
+%>
 
-<%= image_tag qrcode_tag "test"%>
+<%= image_tag qrcode_tag "test" %>
