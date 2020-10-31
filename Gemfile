@@ -60,4 +60,7 @@ group :production do
 end
 
 gem 'rqrcode'
+
+gem 'rqrcode_png'
+
 gem 'chunky_png'

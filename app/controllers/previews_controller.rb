@@ -1,5 +1,4 @@
 class PreviewsController < ApplicationController
-  require 'rqrcode'
-  require 'chunky_png'
-
+  def index
+  end
 end
