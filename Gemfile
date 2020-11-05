@@ -64,3 +64,5 @@ gem 'rqrcode'
 gem 'rqrcode_png'
 
 gem 'chunky_png'
+
+gem 'rmagick', :require => 'RMagick'
